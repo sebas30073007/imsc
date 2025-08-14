@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mecatrónica IBERO</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    rel="stylesheet" crossorigin="anonymous">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos propios -->
+  <link href="../assets/styles.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
+    <div class="container-fluid px-lg-4">
+      <a class="navbar-brand" href="index.html">
+        <img src="../assets/img/logos/new_meca_logo.png" alt="Mecatrónica IBERO">
+      </a>
+
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+              aria-controls="navbarResponsive" aria-expanded="false"
+              aria-label="Mostrar menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item"><a class="nav-link fw-bold" href="admisiones.html">Admisiones</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link fw-bold dropdown-toggle" href="#" id="vidaDropdown"
+               role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Vida universitaria
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="vidaDropdown">
+              <li><a class="dropdown-item" href="vida_universitaria/plan_estudios.html">Plan de estudios</a></li>
+              <li><a class="dropdown-item" href="vida_universitaria/grupos_estudiantiles.html">Grupos estudiantiles</a></li>
+              <li><a class="dropdown-item" href="vida_universitaria/sociedad_alumnos.html">Sociedad de alumnos</a></li>
+              <li><a class="dropdown-item" href="vida_universitaria/logros_estudiantiles.html">Logros estudiantiles</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link fw-bold dropdown-toggle" href="#" id="academiaDropdown"
+               role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Academia e investigación
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="academiaDropdown">
+              <li><a class="dropdown-item" href="academia/academicos.html">Académicos</a></li>
+              <li><a class="dropdown-item" href="academia/proyectos_investigacion.html">Proyectos · investigación</a></li>
+              <li><a class="dropdown-item" href="academia/publicaciones.html">Publicaciones</a></li>
+              <li><a class="dropdown-item" href="academia/logros.html">Logros</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link fw-bold dropdown-toggle" href="#" id="instalacionesDropdown"
+               role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Instalaciones
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="instalacionesDropdown">
+              <li><a class="dropdown-item" href="instalaciones/laboratorios.html">Laboratorios</a></li>
+              <li><a class="dropdown-item" href="instalaciones/equipo.html">Equipo</a></li>
+              <li><a class="dropdown-item" href="instalaciones/reglamentos.html">Reglamentos</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link fw-bold" href="empleabilidad.html">Empleabilidad</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO (pantalla completa) ------------------------------------------------>
+  <!-- HERO (pantalla completa) ---------------------------------------------->
+  <header id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- Único slide con video de fondo -->
+      <div class="carousel-item active position-relative">
+
+        <!-- video full-cover -->
+        <video class="hero-bg" autoplay muted loop playsinline>
+          <source src="../assets/video/hero_admisiones.mp4" type="video/mp4">
+          <!-- Fallback -->
+          <img src="../assets/img/map-image.png" alt="Laboratorio de Mecatrónica" />
+        </video>
+
+        <!-- overlay oscurecedor -->
+        <div class="overlay"></div>
+
+        <!-- texto y CTA -->
+        <div class="hero-copy--corner text-white text-start">
+          <h1 class="fw-bold mb-2">Construye el futuro</h1>
+          <p class="lead mb-4">Convierte tu curiosidad en soluciones que impactan al mundo.</p>
+          <a href="#visitas" class="btn btn-danger me-2">Agenda tu visita guiada</a>
+          <a href="https://preuniversitarios.ibero.mx/" target="_blank"
+            class="btn btn-outline-light">Proceso de admisión</a>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+
+  <main>
+
+  <!-- 2. ¿Por qué Mecatrónica IBERO? ------------------------------------------>
+  <section class="py-5 bg-light" id="beneficios">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold">¿Por qué Mecatrónica IBERO?</h2>
+
+      <div class="row g-4">
+        <!-- PIONEROS EN CPS ----------------------------------------------------->
+        <article class="col-md-3">
+          <div class="card h-100 shadow-sm text-center p-4 hover-lift">
+            <i class="bi bi-diagram-3 fs-1 text-danger mb-3"></i>
+            <h5 class="fw-semibold">Pioneros en<br>Sistemas Ciberfísicos</h5>
+            <p class="small mb-0">
+              Primer programa en México que fusiona <strong>IA, biomecatrónica, IoT y robótica autónoma</strong>.
+              Te gradúas listo para dirigir los desafíos de la <em>Industria&nbsp;4.0</em>.
+            </p>
+          </div>
+        </article>
+
+        <!-- LABORATORIOS -------------------------------------------------------->
+        <article class="col-md-3">
+          <div class="card h-100 shadow-sm text-center p-4 hover-lift">
+            <i class="bi bi-cpu fs-1 text-danger mb-3"></i>
+            <h5 class="fw-semibold">171 laboratorios<br>+ Fab Lab 24/7</h5>
+            <p class="small mb-0">
+              Impresoras&nbsp;3D, robots&nbsp;UR3 y redes industriales siempre abiertos.
+              <strong>Aprendes haciendo</strong> desde el primer semestre, sin pagar renta de equipo.
+            </p>
+          </div>
+        </article>
+
+        <!-- PREMIOS ------------------------------------------------------------->
+        <article class="col-md-3">
+          <div class="card h-100 shadow-sm text-center p-4 hover-lift">
+            <i class="bi bi-trophy fs-1 text-danger mb-3"></i>
+            <h5 class="fw-semibold">Proyectos<br>premiados</h5>
+            <p class="small mb-0">
+              6 de 11 galardones nacionales de cohetería y <strong>oro mundial en robótica colaborativa</strong>.
+              Tu portafolio habla antes que tu CV.
+            </p>
+          </div>
+        </article>
+
+        <!-- HUMANISTA ----------------------------------------------------------->
+        <article class="col-md-3">
+          <div class="card h-100 shadow-sm text-center p-4 hover-lift">
+            <i class="bi bi-people fs-1 text-danger mb-3"></i>
+            <h5 class="fw-semibold">Comunidad<br>humanista</h5>
+            <p class="small mb-0">
+              Formación en liderazgo y justicia social; <strong>90 % de nuestro alumnado colabora en
+              proyectos de impacto</strong> para servir a quienes más lo necesitan.
+            </p>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- contador animado -->
+      <div class="display-6 text-center mt-5">
+        <span id="counter-anos" data-target="21">0</span> años de trayectoria
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Especializaciones (flip cards) -------------------------------------->
+  <section class="py-5 bg-light" id="especializaciones">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold">Especialízate</h2>
+
+      <div class="row g-4">
+        <!-- IA -->
+        <!-- IA ----------------------------------------------------------------->
+        <div class="col-6 col-lg-3">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front front-ai d-flex flex-column justify-content-center align-items-center">
+                <i class="bi bi-brain fs-1 mb-2"></i>
+                <span class="fw-semibold">Inteligencia&nbsp;Artificial</span>
+              </div>
+              <div class="flip-card-back d-flex flex-column justify-content-center align-items-center px-3">
+                <ul class="list-unstyled small mb-0">
+                  <li>• Redes neuronales &amp; <em>Deep Learning</em></li>
+                  <li>• Visión computarizada en robots</li>
+                  <li>• Data Science para la industria</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Biomecatrónica ------------------------------------------------------>
+        <div class="col-6 col-lg-3">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front front-bio d-flex flex-column justify-content-center align-items-center">
+                <i class="bi bi-heart-pulse fs-1 mb-2"></i>
+                <span class="fw-semibold">Biomecatrónica</span>
+              </div>
+              <div class="flip-card-back d-flex flex-column justify-content-center align-items-center px-3">
+                <ul class="list-unstyled small mb-0">
+                  <li>• Prótesis biónicas inteligentes</li>
+                  <li>• Exoesqueletos de rehabilitación</li>
+                  <li>• Dispositivos biomédicos IoT</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sistemas autónomos -------------------------------------------------->
+        <div class="col-6 col-lg-3">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front front-auto d-flex flex-column justify-content-center align-items-center">
+                <i class="bi bi-robot fs-1 mb-2"></i>
+                <span class="fw-semibold">Sistemas&nbsp;Autónomos</span>
+              </div>
+              <div class="flip-card-back d-flex flex-column justify-content-center align-items-center px-3">
+                <ul class="list-unstyled small mb-0">
+                  <li>• Programación de drones &amp; AGV</li>
+                  <li>• Percepción y navegación SLAM</li>
+                  <li>• Robótica colaborativa (cobots)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- IoT ----------------------------------------------------------------->
+        <div class="col-6 col-lg-3">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front front-iot d-flex flex-column justify-content-center align-items-center">
+                <i class="bi bi-cloud-check fs-1 mb-2"></i>
+                <span class="fw-semibold">Internet&nbsp;de&nbsp;las&nbsp;Cosas</span>
+              </div>
+              <div class="flip-card-back d-flex flex-column justify-content-center align-items-center px-3">
+                <ul class="list-unstyled small mb-0">
+                  <li>• Redes de sensores industriales</li>
+                  <li>• Edge&nbsp;computing &amp; 5G</li>
+                  <li>• Ciberseguridad OT</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- 5. Perfiles (tabs) ----------------------------------------------------->
+  <section class="py-5" id="perfiles">
+    <div class="container">
+      <ul class="nav nav-pills justify-content-center mb-4" id="perfilTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#ingreso"
+                  type="button" role="tab">Perfil de ingreso</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#egreso"
+                  type="button" role="tab">Perfil de egreso</button>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+        <!-- PERFIL DE INGRESO -------------------------------------------------->
+        <div class="tab-pane fade show active" id="ingreso" role="tabpanel">
+
+          <!-- se reproduce al cargar la página -->
+          <video class="perfil-video w-100 mb-4" autoplay muted playsinline preload="auto" data-play-once>
+            <source src="../assets/video/ESTUDIANTE.mp4" type="video/mp4">
+          </video>
+
+          <!-- …tu contenido de ingreso… -->
+        </div>
+
+        <!-- PERFIL DE EGRESO --------------------------------------------------->
+        <div class="tab-pane fade" id="egreso" role="tabpanel">
+
+          <!-- se reproducirá sólo la primera vez que se abra la pestaña -->
+          <video class="perfil-video w-100 mb-4" autoplay muted playsinline preload="auto" data-play-once>
+            <source src="../assets/video/INGENIERO.mp4" type="video/mp4">
+          </video>
+
+          <!-- …tu contenido de egreso… -->
+        </div>
+
+      </div><!-- /.tab-content -->
+    </div>
+  </section>
+
+
+
+
+
+  <!-- 6. Campo laboral (infografía + donut) ---------------------------------->
+  <section class="py-5 bg-light" id="campo">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold">Campo laboral</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <canvas id="donutEgresados" height="220"></canvas>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-unstyled lh-lg">
+            <li><i class="bi bi-building me-2 text-danger"></i>Industria 4.0 y manufactura inteligente</li>
+            <li><i class="bi bi-graph-up-arrow me-2 text-danger"></i>I+D en IA, robótica y drones</li>
+            <li><i class="bi bi-lightbulb me-2 text-danger"></i>Emprendimiento de base tecnológica</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Vive la IBERO (carrusel) ------------------------------------------->
+  <section class="py-5" id="visitas">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold">Vive la experiencia IBERO</h2>
+
+      <div id="campusCarousel" class="carousel slide shadow" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../assets/img/campus/lab_robotica.jpg" class="d-block w-100" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/img/campus/drones.jpg" class="d-block w-100" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/img/campus/areas_verdes.jpg" class="d-block w-100" alt="">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#campusCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#campusCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Proyección internacional --------------------------------------->
+  <section class="py-5 bg-light" id="internacional">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold">Proyección internacional</h2>
+
+      <!-- fila: mapa + requisitos -->
+      <div class="row g-4">
+
+        <!-- Mapa interactivo -->
+        <div class="col-lg-7">
+          <div id="mapInternational" style="height:500px;border-radius:8px;"></div>
+        </div>
+
+        <!-- Requisitos y beneficios -->
+        <div class="col-lg-5">
+          <div class="accordion" id="accordionMovilidad">
+
+            <!-- requisitos -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingReq">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseReq" aria-expanded="true" aria-controls="collapseReq">
+                  Requisitos para tu intercambio
+                </button>
+              </h2>
+              <div id="collapseReq" class="accordion-collapse collapse show"
+                  aria-labelledby="headingReq" data-bs-parent="#accordionMovilidad">
+                <div class="accordion-body small">
+                  <ul class="mb-0 lh-lg">
+                    <li><strong>120&nbsp;créditos aprobados</strong> al postular (≈ 4.º semestre).</li>
+                    <li><strong>Promedio mínimo</strong> de calidad y &lt; 3 materias reprobadas.</li>
+                    <li><strong>Constancia B2</strong> o equivalente del idioma destino.</li>
+                    <li><strong>Seguro médico internacional</strong> (USD&nbsp;500 000 + repatriación).</li>
+                    <li><strong>Fondos comprobables</strong> para manutención y viaje.</li>
+                    <li><strong>Visado de estudiante</strong> y pasaporte vigente ≥ 6 meses.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- pasos -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingPasos">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsePasos" aria-expanded="false" aria-controls="collapsePasos">
+                  Pasos rápidos de postulación
+                </button>
+              </h2>
+              <div id="collapsePasos" class="accordion-collapse collapse"
+                  aria-labelledby="headingPasos" data-bs-parent="#accordionMovilidad">
+                <div class="accordion-body small">
+                  <ol class="mb-0 lh-lg">
+                    <li>Asiste al <em>InfoDay</em> de Movilidad.</li>
+                    <li>Elige 3 destinos y valida materias con tu coordinador.</li>
+                    <li>Llena solicitud en línea y carga CV, carta-motivación, idioma.</li>
+                    <li>Entrevista con Movilidad Estudiantil.</li>
+                    <li>Recibe carta de aceptación → Tramita visado y seguro.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <!-- beneficios -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingBen">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseBen" aria-expanded="false" aria-controls="collapseBen">
+                  ¿Por qué conviene?
+                </button>
+              </h2>
+              <div id="collapseBen" class="accordion-collapse collapse"
+                  aria-labelledby="headingBen" data-bs-parent="#accordionMovilidad">
+                <div class="accordion-body small">
+                  <ul class="mb-0 lh-lg">
+                    <li><strong>Misma colegiatura IBERO</strong>; sólo cubres vida diaria.</li>
+                    <li><strong>Revalidación garantizada</strong> &mdash; sin retraso de titulación.</li>
+                    <li><strong>+15&nbsp;% salario inicial</strong> en egresados con movilidad.</li>
+                    <li>Becas Patronato / FICSAC y Santander para transporte y vivienda.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /.accordion -->
+        </div><!-- /.col -->
+
+      </div><!-- /.row -->
+    </div>
+  </section>
+
+
+
+  <!-- 9. Acreditaciones -------------------------------------------------------> 
+  <section class="py-5" id="acreditaciones">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">Excelencia acreditada</h2>
+      <img src="../assets/img/logos/cacei.svg" alt="CACEI" height="80" class="me-3">
+      <!-- agrega rankings si los tienes -->
+    </div>
+  </section>
+
+  <!-- 10. Becas ---------------------------------------------------------------> 
+  <section class="py-5 bg-light" id="becas">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold">Becas de ingeniería</h2>
+      <div class="row g-4">
+        <!-- STEM -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm text-center p-4">
+            <h5 class="fw-semibold">Beca Talento STEM</h5>
+            <p>Reconoce tu excelencia académica en ciencias y tecnología.</p>
+            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#becaModal" data-beca="STEM">Quiero más info</button>
+          </div>
+        </div>
+        <!-- Liderazgo -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm text-center p-4">
+            <h5 class="fw-semibold">Beca Liderazgo Social</h5>
+            <p>Para quienes impactan positivamente a sus comunidades.</p>
+            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#becaModal" data-beca="Liderazgo">Quiero más info</button>
+          </div>
+        </div>
+        <!-- Excelencia -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm text-center p-4">
+            <h5 class="fw-semibold">Beca Excelencia Académica</h5>
+            <p>Premiamos tu esfuerzo y constancia durante la preparatoria.</p>
+            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#becaModal" data-beca="Excelencia">Quiero más info</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Becas -->
+  <div class="modal fade" id="becaModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-danger text-white">
+          <h5 class="modal-title" id="becaTitle">Beca</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form id="becaForm">
+            <div class="mb-3">
+              <label class="form-label">Nombre completo</label>
+              <input type="text" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Correo</label>
+              <input type="email" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-danger w-100">Enviar solicitud</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 11. FAQ ----------------------------------------------------------------->
+  <section class="py-5" id="faq">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold">Preguntas frecuentes</h2>
+      <div class="accordion accordion-flush" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#faq1">¿Cuándo cierran inscripciones?</button></h2>
+          <div id="faq1" class="accordion-collapse collapse"><div class="accordion-body">
+            El periodo concluye a mediados de junio; revisa fechas exactas en la página oficial.
+          </div></div>
+        </div>
+        <!-- …agrega 5-7 más… -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. CTA final ----------------------------------------------------------->
+  <section class="py-5 text-white cta-final">
+    <div class="container text-center">
+      <blockquote class="blockquote fs-4 fw-light mb-4">
+        “El amor se ha de poner más en las obras que en las palabras.”<br>
+        <footer class="blockquote-footer text-white-50 mt-2">San Ignacio de Loyola</footer>
+      </blockquote>
+      <a href="https://ibero.mx/admisiones-preuniversitarios" target="_blank"
+        class="btn btn-light btn-lg px-5">Inicia tu proceso</a>
+    </div>
+  </section>
+
+  </main>
+
+
+
+
+  <link  rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', ()=>{
+    // ❶ Crea el mapa (sin scroll wheel para no “robar” la página)
+    const map = L.map('mapInternational',{scrollWheelZoom:false})
+                .setView([20,0], 2);      // centro genérico
+
+    // ❷ Capa base libre
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+      attribution:'© OpenStreetMap'
+    }).addTo(map);
+
+    // ❸ Destinos a marcar
+    const destinos = [
+      { pais:'España',       uni:'UPM / UCLM',          lat:40.4,  lng:-3.7 },
+      { pais:'Estados Unidos',uni:'The American Univ.',lat:38.9,  lng:-77.0},
+      { pais:'Francia',      uni:'Catholique de Lille', lat:50.63, lng:3.05},
+      { pais:'Reino Unido',  uni:'Diversos convenios',  lat:51.5,  lng:-0.1},
+      { pais:'Japón',        uni:'Sophia University',   lat:35.7,  lng:139.7},
+      { pais:'Alemania',     uni:'Arts et Métiers (DE-FR)', lat:49.0,lng:9.0},
+      { pais:'Brasil',       uni:'PUC-Rio',             lat:-22.9, lng:-43.2},
+      { pais:'Canadá',       uni:'St FX University',    lat:45.6,  lng:-62.0},
+      { pais:'Italia',       uni:'Cattolica Sacro Cuore',lat:45.46,lng:9.19},
+      { pais:'Nueva Zelanda',uni:'Programa PMI',        lat:-40.9,lng:174.9}
+    ];
+
+    // ❹ Añade pines con tooltip
+    destinos.forEach(d=>{
+      L.circleMarker([d.lat,d.lng],{
+        radius:6,color:'#ef402c',fillColor:'#ef402c',fillOpacity:0.9
+      })
+      .bindPopup(`<strong>${d.pais}</strong><br>${d.uni}`)
+      .addTo(map);
+    });
+  });
+  </script>
+
+
+
+
+
+
+  <!-- Bootstrap bundle (Popper incluido) -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+  <!-- Lógica propia -->
+  <script src="../assets/scripts.js"></script>
+</body>
+</html>
